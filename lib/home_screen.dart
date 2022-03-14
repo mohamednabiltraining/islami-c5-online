@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:islami_c5_online/home/hadeth_tab.dart';
+import 'package:islami_c5_online/home/Ahadeth/hadeth_tab.dart';
 import 'package:islami_c5_online/home/quran/qura_tab.dart';
 import 'package:islami_c5_online/home/radio_tab.dart';
 import 'package:islami_c5_online/home/tasbeh_tab.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class HomeScreen extends StatefulWidget {
   static const String routeName = 'home';
 
@@ -12,7 +12,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int currentIndex = 0;
+  int currentIndex = 1;
 
   @override
   Widget build(BuildContext context) {
@@ -27,9 +27,10 @@ class _HomeScreenState extends State<HomeScreen> {
         Scaffold(
           appBar: AppBar(
             title: Text(
-              'Islami',
+              AppLocalizations.of(context)!.islami,
               style: Theme.of(context).textTheme.headline1,
             ),
+
           ),
           bottomNavigationBar: Theme(
             data: Theme.of(context)
