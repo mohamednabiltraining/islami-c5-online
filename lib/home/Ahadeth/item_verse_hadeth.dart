@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class ItemVerse extends StatelessWidget {
+class ItemVerseHadeth extends StatelessWidget {
   String text;
 
-  ItemVerse(this.text);
+  ItemVerseHadeth(this.text);
 
   @override
   Widget build(BuildContext context) {
